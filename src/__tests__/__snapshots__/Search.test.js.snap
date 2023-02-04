@@ -2,7 +2,9 @@
 
 exports[`Search renders correctly 1`] = `
 <DocumentFragment>
-  <li>
+  <form
+    class="search-form"
+  >
     <input
       class="search-input"
       type="text"
@@ -11,8 +13,8 @@ exports[`Search renders correctly 1`] = `
       class="button"
       type="submit"
     >
-      Submit
+      Search
     </button>
-  </li>
+  </form>
 </DocumentFragment>
 `;

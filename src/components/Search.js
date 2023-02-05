@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "../styles/search.css";
 import getImages from "../requests/getImages";
 
-function Search() {
+function Search({ setSearchResults }) {
   const [value, setValue] = useState();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    getImages(value);
+    setSearchResults(getImages(value));
   };
 
   return (
@@ -17,8 +17,10 @@ function Search() {
            className="search-input"
            type="text"
            onChange={(e) => setValue(e.target.value)}
-    />
-       <button className="button" type="submit">Search</button>
+        />
+        <button className="button" type="submit">
+         Search
+        </button>
       </form>
     </>
   );  

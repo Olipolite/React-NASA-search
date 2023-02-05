@@ -1,19 +1,22 @@
-import axios, { query } from "axios";
+import axios from "axios";
 
-const getImages = () => {
-
+const getImages = (query) => {
     if (!query) {
-        return Promise.resolve([]);
+      return Promise.resolve([]);
     } else {
         return axios
-        .get('https://images-api.nasa.gov/search?q=moon')
+        .get(`https://images-api.nasa.gov/search?q=${query}`)
         .then((response) => {
-            console.log(response)
+          const imageResults = response.data.collection.items;
+          const parsedImages = imageResults.filter((element) => element.data[0].media_type === "image");
+          const images = parsedImages.map((image) => image.links[0].href);
+          console.log(images)
+          return images
         })
         .catch((err) => {
             console.log(err);
         });
     }
-}
+};
 
 export default getImages;

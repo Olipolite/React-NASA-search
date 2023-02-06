@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Search from "./Search";
 import SearchResults from "./SearchResults"
+import DarkMode from "./DarkMode";
+import NasaLogo from "../images/nasalogotransparent.png"
 import "../styles/app.css";
 
 const App = () => {
@@ -11,13 +13,15 @@ const App = () => {
     <div className="app">
       <img
         className="nasa"
-        src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
+        src={NasaLogo}
         alt="nasaLogo"
          />
       <Search setSearchResults={setSearchResults} />
       <SearchResults results={searchResults} />
+      <DarkMode />
     </div>
   );
 }
 
 export default App;
+

@@ -20,7 +20,7 @@ function Search({ setSearchResults }) {
            type="text"
            onChange={(e) => setValue(e.target.value)}
         />
-        <button className="button" type="submit">
+        <button className="search-button" type="submit">
          Search
         </button>
       </form>

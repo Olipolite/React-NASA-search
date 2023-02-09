@@ -11,7 +11,7 @@ exports[`Search renders correctly 1`] = `
       type="text"
     />
     <button
-      class="button"
+      class="search-button"
       type="submit"
     >
       Search

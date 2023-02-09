@@ -3,7 +3,7 @@ import "../styles/darkmode.css";
 
 const DarkMode = () => {
     const [darkMode, setDarkMode] = useState('light')
-    const toggleTheme = () => {
+    const toggleDarkMode = () => {
         if ( darkMode === 'light') {
             setDarkMode('dark')
         } else {
@@ -13,9 +13,13 @@ const DarkMode = () => {
     useEffect(() => {
         document.body.className = darkMode;
     }, [darkMode]);
+
+    if (darkMode === 'dark') {
+
+    }
     return (
         <div className={`App ${darkMode}`}>
-            <button onClick={toggleTheme}>Toggle Theme</button>
+            <button className="dark-mode-button" onClick={toggleDarkMode}>Toggle Darkmode</button>
         </div>
     );
 }

@@ -19,22 +19,24 @@ exports[`App renders correctly 1`] = `
         type="text"
       />
       <button
-        class="button"
+        class="search-button"
         type="submit"
       >
         Search
       </button>
     </form>
-    <p>
-      No results
-    </p>
     <div
       class="App light"
     >
-      <button>
-        Toggle Theme
+      <button
+        class="dark-mode-button"
+      >
+        Toggle Darkmode
       </button>
     </div>
+    <p>
+      No results
+    </p>
   </div>
 </DocumentFragment>
 `;

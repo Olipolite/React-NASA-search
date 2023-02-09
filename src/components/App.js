@@ -17,11 +17,10 @@ const App = () => {
         alt="nasaLogo"
          />
       <Search setSearchResults={setSearchResults} />
-      <SearchResults results={searchResults} />
       <DarkMode />
+      <SearchResults results={searchResults} />
     </div>
   );
 }
 
 export default App;
-

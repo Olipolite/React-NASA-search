@@ -1,27 +1,28 @@
+.search-form {
+    display: relative;
+    border: 1px, solid #000;   
+}
+
 .search-input {
     object-fit: cover;
-    width: 250px;
-    height: 15px;
+    width: 300px;
+    height: 25px;
     border-radius: 10px;
     font-size: 15px;
     padding: 0 20px;
     color: black;
 }
 
-.search-form {
-    display: flex;
-    flex-direction: row;
-    margin-left: 60px;
-}
-
-.button{
+.search-button{
+    position: absolute;
     cursor: pointer;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    margin-left: 10px;
     border: 1px solid black;
     font-size: small;
     border-radius: 2px;
+    margin-left: 10px;
+    margin-top: 4px;
 }
 
 .button:hover {

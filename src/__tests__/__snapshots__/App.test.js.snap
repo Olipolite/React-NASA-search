@@ -26,12 +26,12 @@ exports[`App renders correctly 1`] = `
       </button>
     </form>
     <div
-      class="App light"
+      class="light"
     >
       <button
         class="dark-mode-button"
       >
-        Toggle Darkmode
+        Dark Mode
       </button>
     </div>
     <p>

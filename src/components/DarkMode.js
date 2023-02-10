@@ -14,12 +14,9 @@ const DarkMode = () => {
         document.body.className = darkMode;
     }, [darkMode]);
 
-    if (darkMode === 'dark') {
-
-    }
     return (
-        <div className={`App ${darkMode}`}>
-            <button className="dark-mode-button" onClick={toggleDarkMode}>Toggle Darkmode</button>
+        <div className={`${darkMode}`}>
+            <button className="dark-mode-button" onClick={toggleDarkMode}>Dark Mode</button>
         </div>
     );
 }

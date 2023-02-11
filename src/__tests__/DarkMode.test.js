@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, getByTestId, render, screen } from '@testing-library/react';
 import DarkMode from '../components/DarkMode';
 
 describe("DarkMode", () => {
@@ -9,15 +9,23 @@ describe("DarkMode", () => {
       expect(asFragment()).toMatchSnapshot();
     });
 
+    it("default state works properly", () => {
+      render(<DarkMode />)
+      const div = screen.getByTestId('div');
+      expect(div).toHaveClass("light");
+    });
+
     it("button toggles Darkmode when clicked", () => {
-        render(<DarkMode />)
-        
-        const button = screen.getByRole('button')
-        const theme = screen.getByTestId('light')
+      render(<DarkMode />)
 
-        fireEvent.click(button)
+      const div = screen.getByTestId('div');
+      const button = screen.getByRole('button');
+      fireEvent.click(button);
 
-        expect(theme).toHaveStyle("background-color: black")
+      expect(div).toHaveClass("dark");
 
+      fireEvent.click(button);
+
+      expect(div).toHaveClass("light");
     })
   });

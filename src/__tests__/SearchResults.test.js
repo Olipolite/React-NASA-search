@@ -1,4 +1,4 @@
-import { render, } from '@testing-library/react';
+import { render, screen} from '@testing-library/react';
 import SearchResults from '../components/SearchResults';
 
 describe("Search results", () => {
@@ -10,4 +10,12 @@ describe("Search results", () => {
   
       expect(asFragment()).toMatchSnapshot();
     });
+
+    it("renders 'no results' if there are no results", () => {
+      resultsMock = [];
+      render(<SearchResults results={resultsMock} />)
+      const errorMessage = screen.getByText("No results");
+
+      expect(errorMessage).toBeInTheDocument()
+    })
   });

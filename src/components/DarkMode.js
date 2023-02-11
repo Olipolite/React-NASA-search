@@ -10,14 +10,16 @@ const DarkMode = () => {
             setDarkMode('light')
         }
     };
+    
     useEffect(() => {
         document.body.className = darkMode;
     }, [darkMode]);
-
+ 
     return (
-        <div data-testid="div" className={darkMode}>
+        <div data-testid="div" className={darkMode} >
             <button className="dark-mode-button" onClick={toggleDarkMode}>Dark Mode</button>
         </div>
     );
 }
+
 export default DarkMode;

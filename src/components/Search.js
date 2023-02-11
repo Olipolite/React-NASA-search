@@ -16,7 +16,6 @@ function Search({ setSearchResults }) {
       <form className="search-form" onSubmit={handleSubmit}>
         <input
            className="search-input"
-           id="search-smaller"
            type="text"
            onChange={(e) => setValue(e.target.value)}
         />

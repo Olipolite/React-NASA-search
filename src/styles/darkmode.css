@@ -5,5 +5,10 @@
 
 
 .dark-mode-button {
+    cursor: pointer;
     margin-top: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    background-color: white;
 }
+

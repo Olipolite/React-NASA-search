@@ -15,7 +15,6 @@ exports[`App renders correctly 1`] = `
     >
       <input
         class="search-input"
-        id="search-smaller"
         type="text"
       />
       <button

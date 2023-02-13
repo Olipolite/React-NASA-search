@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# :astronaut: NASA Image Search - Tech Test 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a search engine that I created using react.js. This was a practice tech test and is a part of the front end module at Command Shift.
 
-## Available Scripts
+## Desktop
+![tech-test](tech-test.png)
 
-In the project directory, you can run:
+## Mobile
+![tech-test-mobile](tech-test-mobile.png)
 
-### `npm start`
+# Packages
+- <a href="https://www.npmjs.com/package/axios" target="_blank">Axios</a>
+- <a href="https://www.npmjs.com/package/prop-types" target="_blank">PropTypes</a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br />
+<br />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Testing Libraries
+- <a href="https://jestjs.io/" target="_blank">Jest</a>
+- <a href="https://testing-library.com/docs/react-testing-library/intro/" target="_blank">React Testing Library</a>
 
-### `npm test`
+<br />
+<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Installation
 
-### `npm run build`
+1. Clone the repo: git clone https://github.com/Olipolite/tech-test
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install the package locally: npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. To run the app: npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. To run the tests: npm test
 
-### `npm run eject`
+<br />
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# How To Use
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Enter any word into the search field ( I would suggest something regarding NASA or space ;) ) and you'll receive relevant images to your search query. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br />
+<br />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# If I had more time
 
-## Learn More
+Sadly all good things comes to an end. But these are some things I would like to improve on within the app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Improve the styling of the app, especially the look and the layout of the buttons.
+- Make the app more responsive to a wider selection of mobile devices.
+- I would add a tooltip for each image when hovering. Providing more information.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br />
+<br />
 
-### Code Splitting
+## Oliver Öquist :man_technologist:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Linkedin: <a href="https://www.linkedin.com/in/oliver-%C3%B6quist-6a1738243/" target="_blank">Oliver Öquist</a> <br />
+GitHub: <a href="https://github.com/Olipolite" target="_blank">Olipolite</a>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

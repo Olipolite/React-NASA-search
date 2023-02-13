@@ -42,9 +42,9 @@ Enter any word into the search field ( I would suggest something regarding NASA 
 <br />
 <br />
 
-# If I had more time
+# If I Had More Time
 
-Sadly all good things comes to an end. But these are some things I would like to improve on within the app.
+Sadly all good things comes to an end. But these are some ideas I would've liked to add to the app.
 
 - Improve the styling of the app, especially the look and the layout of the buttons.
 - Make the app more responsive to a wider selection of mobile devices.

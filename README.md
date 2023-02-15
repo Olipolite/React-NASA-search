@@ -1,6 +1,6 @@
 # :astronaut: NASA Image Search - Tech Test 
 
-This is a search engine that I created using react.js. This was a practice tech test and is a part of the front end module at Command Shift.
+This is a search engine that I created using react.js. This was a practice tech test and is a part of the front end module at <a href="https://www.commandshift.co/" target="_blank">Command Shift</a>
 
 ## Desktop
 ![tech-test](tech-test.png)
